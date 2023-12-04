@@ -6,11 +6,11 @@ import Card from "./components/Card"
 import data from "./data"
 
 export default function App() {
-console.log(data)
 
     const cards = data.map(item => {
         return (
             <Card 
+                key={item.id}
                 img={item.coverImg}
                 rating={item.stats.rating}
                 reviewCount={item.stats.reviewCount}
@@ -25,7 +25,9 @@ console.log(data)
         <div>
             <Navbar />
             <Hero />
-            {cards}
+            <section className="cards-list">
+                {cards}
+            </section>
 
 
         </div>
