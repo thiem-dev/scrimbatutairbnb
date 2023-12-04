@@ -1,5 +1,5 @@
-import katieImg from '../images/katie-zaferes.png';
-import star from '../images/star.png'
+import katieImg from '../../public/images/katie-zaferes.png';
+import star from '../../public/images/star.png';
 
 export default function Card() {
     return (
